@@ -1,4 +1,5 @@
-*{
+*
+{
 	margin: 0;
 	padding: 0;
 }
@@ -11,7 +12,7 @@ body{
 #contenedor{
 	width: 960px;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 100;
 	border-radius: 10px;
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -23,9 +24,156 @@ header{
 	background: 	#F8F8FF;
 	height: 100%;
 	float: left;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+nav {
+	background: #FF8C00;
+	clear: both;
+	margin-top: 10px;
+	border-radius: 10px;
+	height: 50px;
+	width: auto;
 
 }
-nav{
-	background: #FF8C00;
-	height: 190px;
+nav ul{
+	margin: auto;
+	padding-top: -20px;
+	list-style: none;
+	position: relative;
+}
+nav > ul > li > a{
+	display: block;
+	padding: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+nav ul ul{
+	position: absolute;
+	top: 60px;
+	display: block;
+	background: #346998;
+opacity: 0;
+}
+
+nav ul li:hover ul{
+	opacity: 1;
+	
+} 
+
+nav a 
+{
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: arial;
+	text-decoration: none;
+	padding: 20px;
+
+	
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px 0px;
+	float: left;
+	margin: 3px;
+
+
+}
+
+nav a:hover
+{
+	background: #CCCCCC;
+	color: #fff;
+	
+}
+nav ul li:hover > ul{
+	display: block;
+}
+.submenu{
+	position: absolute;
+	background: #333;
+	width: 120%;
+	display: none;
+}
+.submenu li a{
+	display: block;
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+}
+.menu li:hover .submenu{
+	display: block;
+}
+
+#slider {
+	margin: auto;
+	border: 5px solid #CCCCCC;
+	margin-top: 5px;
+}
+#contenido{
+	float: left;
+	width: 700px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+}
+.articulos{
+	margin: 10px;
+
+}
+.articulos h2 {
+font-size: 40px;
+padding: 10px;
+color: #000000;
+border-bottom: 3px solid #000000;
+font-family: arial;
+}
+.articulos img{
+	float: left;
+	margin: 10px;
+}
+
+.articulos p{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: arial;
+}
+aside{
+	float: right;
+	width: 250px;
+	background: #FFFFFF;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+aside h3{
+font-size: 20px;
+color: #ffffff;
+background: #000000;
+border-radius: 4px;
+text-align: center;
+padding: 10px;
+font-family: arial;
+}
+aside p{
+	padding: 10px;
+	font-size: 14px;
+	font-family: arial;text-align: justify;
+}
+footer{
+	height: 40px;
+	background:  #000000;
+	color: #ffffff;
+	clear: both;
+}
+
+footer p{
+	font-size: 15px;
+	font-family: arial;
+	text-align: center;
+	line-height: 30px;
 }
